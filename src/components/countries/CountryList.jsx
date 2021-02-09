@@ -6,7 +6,7 @@ import Country from './Country'
 const CountryList = ({ countries }) => {
     const countryElements = countries.map(country => (
         <li key={country.code}>
-            <Link to={`/country/${counrty.code}`}>
+            <Link to={`/country/${country.code}`}>
                 <Country flagURL={country.flagURL} name={country.name} />
             </Link>
         </li>
@@ -20,8 +20,8 @@ const CountryList = ({ countries }) => {
 };
 
 CountryList.propTypes = {
-    counrties: PropTypes.arrayOf(PropTypes.shape({
-        id: PropTypes.string.isRequired,
+    countries: PropTypes.arrayOf(PropTypes.shape({
+        code: PropTypes.string.isRequired,
         name: PropTypes.string.isRequired,
         flagURL: PropTypes.string.isRequired
     })).isRequired

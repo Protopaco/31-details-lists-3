@@ -2,7 +2,7 @@ const URL = 'https://restcountries.eu/rest/v2/';
 export const findCountries = () => {
     return fetch(`${URL}all`)
         .then(res => res.json())
-        .then(({ results }) => results.map(result => ({
+        .then(results => results.map(result => ({
             name: result.name,
             code: result.alpha3Code,
             flagURL: result.flag

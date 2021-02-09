@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const CountryDetail = ({ name, nativeName, code, flagURL, capital }) => (
+const CountryDetail = ({ name, nativeName, flagURL, capital }) => (
     <figure>
         <img src={flagURL} alt={name} />
         <figcaption>
@@ -15,7 +15,6 @@ const CountryDetail = ({ name, nativeName, code, flagURL, capital }) => (
 CountryDetail.propTypes = {
     name: PropTypes.string.isRequired,
     nativeName: PropTypes.string.isRequired,
-    code: PropTypes.string.isRequired,
     flagURL: PropTypes.string.isRequired,
     capital: PropTypes.string.isRequired
 };
