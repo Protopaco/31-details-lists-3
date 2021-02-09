@@ -1,6 +1,6 @@
 
 import React from 'react';
-import CountryList from '../components/countries/CountryList';
+import CountryList from '../components/countries/CountryList.jsx';
 import Loading from '../components/loading/Loading';
 import { useCountries } from '../hooks/Countries';
 
