@@ -2,8 +2,9 @@
 
 exports[`App component renders App 1`] = `
 <DocumentFragment>
-  <h1>
-    Hello World
-  </h1>
+  <img
+    alt="loading"
+    src="http://static.demilked.com/wp-content/uploads/2016/06/gif-animations-replace-loading-screen-2.gif"
+  />
 </DocumentFragment>
 `;

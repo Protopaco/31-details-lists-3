@@ -29,10 +29,7 @@
         "SwitchCase": 1
       }
     ],
-    "quotes": [
-      "error",
-      "single"
-    ],
+    "quotes": [],
     "semi": [
       "error",
       "always"

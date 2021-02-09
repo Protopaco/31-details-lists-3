@@ -5,7 +5,7 @@ import CountryDetail from '../components/details/CountryDetail';
 import Loading from '../components/loading/Loading';
 
 const CountryByCode = ({ match }) => {
-    const { loading, country } = useCountryByCode(match.params.id);
+    const { loading, country } = useCountryByCode(match.params.code);
 
     if (loading) return <Loading />;
     return <CountryDetail {...country} />;
@@ -14,7 +14,7 @@ const CountryByCode = ({ match }) => {
 CountryByCode.propTypes = {
     match: PropTypes.shape({
         params: PropTypes.shape({
-            id: PropTypes.string.isRequired
+            code: PropTypes.string.isRequired
         }).isRequired
     }).isRequired
 };
