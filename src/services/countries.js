@@ -1,6 +1,6 @@
-const URL = 'https://restcountries.eu/rest/v2/all';
+const URL = 'https://restcountries.eu/rest/v2/';
 export const findCountries = () => {
-    return fetch(URL)
+    return fetch(`${URL}all`)
         .then(res => res.json())
         .then(({ results }) => results.map(result => ({
             name: result.name,
@@ -9,8 +9,8 @@ export const findCountries = () => {
         })));
 }
 
-export const findCharacterById = code => {
-    return fetch(URL)
+export const findCountryByCode = code => {
+    return fetch(`${URL}alpha/${code}`)
         .then(res => res.json())
         .then(result => ({
             name: result.name,
