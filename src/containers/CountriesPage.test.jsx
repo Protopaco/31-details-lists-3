@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen, waitFor } from '@testing-library/react';
+import { fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { rest } from 'msw';
 import { setupServer } from 'msw/node';
 import countriesResponse from '../fixtures/countries';
@@ -29,6 +29,25 @@ describe('CountriesPage container', () => {
 
         return waitFor(() => {
             expect(listOfCountries).not.toBeEmptyDOMElement();
+        });
+    });
+
+    it('fetches and displays a list of countries', async () => {
+        render(
+            <MemoryRouter>
+                <CountriesPage />
+            </MemoryRouter>
+        )
+
+        screen.getByAltText('loading');
+
+        const advancePage = await screen.findByTestId('advancePage')
+        fireEvent.click(advancePage)
+
+        const pageNum = await screen.findByTestId('pageNum');
+
+        return waitFor(() => {
+            expect(pageNum.innerHTML).toEqual('2');
         });
     });
 });

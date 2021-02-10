@@ -1,0 +1,34 @@
+.countryElements{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.controls li{
+    display: inline;
+    margin: 10px;
+    color: brown;
+}
+
+button{
+    background-color: brown;
+    color: beige;
+    width: 100px;
+    height: 25px;
+    border: none;
+    outline: none;
+    filter: drop-shadow(1px 1px 1px tan)
+}
+
+button:active{
+    filter: drop-shadow(.5px .5px .5px tan)
+}
+
+div ul{
+    display: flex;
+    justify-content: center;
+}

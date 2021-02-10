@@ -1,0 +1,19 @@
+.image{
+    height: 125px;
+}
+.figure{
+    padding: 25px 25px;
+    border: .5px solid brown;
+    border-radius: 15px;
+    background: beige;
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: brown;
+    font-style: bold;
+}
+.caption{
+    margin-top: 10px;
+}

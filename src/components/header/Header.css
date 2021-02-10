@@ -1,0 +1,26 @@
+.header{
+    background-color: brown;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    color: beige;
+    align-items: center;
+    font-size: 3em;
+    margin-top: 0px;
+}
+
+.homeButton{
+    background-color: beige;
+    color: brown;
+    margin-left: 30px;
+}
+.backButton{
+    display: flex;
+    justify-items: flex-start;
+    align-items: flex-start;
+    width: 100vw;
+}
+
+.text{
+    margin-bottom: 30px;
+}

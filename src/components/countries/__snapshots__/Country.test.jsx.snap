@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Country component renders Country 1`] = `
+<DocumentFragment>
+  <figure
+    class="figure"
+  >
+    <img
+      alt="f"
+      class="image"
+      src="f"
+    />
+    <figcaption
+      class="caption"
+    >
+      f
+    </figcaption>
+  </figure>
+</DocumentFragment>
+`;

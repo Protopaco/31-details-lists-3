@@ -44,9 +44,9 @@ export const useCountryByCode = code => {
 export const usePagination = () => {
     const [page, setPage] = useState(1);
 
-    const changePage = async (direction) => {
-        if (direction > 0 && page < 11) await setPage(page + direction)
-        if (direction < 0 && page > 1) await setPage(page + direction)
+    const changePage = (direction) => {
+        if (direction > 0 && page < 11) setPage(page + direction)
+        if (direction < 0 && page > 1) setPage(page + direction)
     };
 
     return { page, changePage }

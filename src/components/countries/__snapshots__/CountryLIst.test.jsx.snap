@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CountryList component renders CountryList 1`] = `
+<DocumentFragment>
+  <div>
+    <ul
+      class="controls"
+    >
+      <li>
+        <button>
+          &lt;
+        </button>
+      </li>
+      <li
+        data-testid="pageNum"
+      >
+        f
+      </li>
+      <li>
+        <button
+          data-testid="advancePage"
+        >
+          &gt;
+        </button>
+      </li>
+    </ul>
+    <ul
+      class="countryElements"
+      data-testid="countries"
+    >
+      <li>
+        <a
+          href="/country/f"
+        >
+          <figure
+            class="figure"
+          >
+            <img
+              alt="f"
+              class="image"
+              src="f"
+            />
+            <figcaption
+              class="caption"
+            >
+              f
+            </figcaption>
+          </figure>
+        </a>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;
