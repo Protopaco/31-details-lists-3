@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Country from './Country'
 import styles from './CountryList.css'
 
+
 const CountryList = ({ countries, changePage, page }) => {
     const countryElements = countries.map(country => (
         <li key={country.code}>
@@ -14,29 +15,33 @@ const CountryList = ({ countries, changePage, page }) => {
     ));
 
     return (
-        <div>
-            <ul className={styles.controls}>
+        <div className={styles.frame}>
+            <ul className={styles.list}>
                 <li>
                     <button
+                        className={styles.button}
                         onClick={() => changePage(-1)}>
                         &lt;
                     </button>
                 </li>
-                <li data-testid="pageNum">
+                <li
+                    className={styles.text}
+                    data-testid="pageNum">
                     {page}
                 </li>
                 <li>
                     <button
+                        className={styles.button}
                         data-testid="advancePage"
                         onClick={() => changePage(+1)}>
                         &gt;
                 </button>
                 </li>
-            </ul>
+            </ul >
             <ul data-testid="countries" className={styles.countryElements}>
                 {countryElements}
             </ul>
-        </div>
+        </div >
     );
 };
 

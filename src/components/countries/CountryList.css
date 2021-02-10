@@ -1,3 +1,6 @@
+@import url('../../context/variables.css');
+
+
 .countryElements{
     display: flex;
     flex-wrap: wrap;
@@ -8,27 +11,33 @@ a{
     text-decoration: none;
 }
 
-.controls li{
+li{
     display: inline;
     margin: 10px;
-    color: brown;
+    color: var(--primary);
+    list-style: none;
 }
 
 button{
-    background-color: brown;
-    color: beige;
+    background-color: var(--secondary);
+    color: var(--primary);
     width: 100px;
     height: 25px;
     border: none;
     outline: none;
-    filter: drop-shadow(1px 1px 1px tan)
+    filter: drop-shadow(1px 1px 1px var(--tertiary))
 }
 
 button:active{
-    filter: drop-shadow(.5px .5px .5px tan)
+    filter: drop-shadow(.5px .5px .5px var(--tertiary))
 }
 
 div ul{
     display: flex;
     justify-content: center;
+}
+
+.frame {
+    background-color: var(--primary)
+
 }
