@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import Country from './Country'
 
-const CountryList = ({ countries }) => {
+const CountryList = ({ countries, changePage, page }) => {
     const countryElements = countries.map(country => (
         <li key={country.code}>
             <Link to={`/country/${country.code}`}>
@@ -13,9 +13,16 @@ const CountryList = ({ countries }) => {
     ));
 
     return (
-        <ul data-testid="countries">
-            {countryElements}
-        </ul>
+        <div>
+            <ul>
+                <li><button onClick={() => changePage(-1)}>&lt;</button></li>
+                <li>{page}</li>
+                <li><button onClick={() => changePage(+1)}>&gt;</button></li>
+            </ul>
+            <ul data-testid="countries">
+                {countryElements}
+            </ul>
+        </div>
     );
 };
 

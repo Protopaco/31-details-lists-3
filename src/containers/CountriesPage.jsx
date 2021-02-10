@@ -1,14 +1,20 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import CountryList from '../components/countries/CountryList.jsx';
 import Loading from '../components/loading/Loading';
-import { useCountries } from '../hooks/Countries';
+import { usePagination, useCountries } from '../hooks/Countries';
+
 
 const CountriesPage = () => {
-    const { loading, countries } = useCountries();
+    const { page, changePage } = usePagination();
+    const { loading, countries } = useCountries(page);
 
     if (loading) return <Loading />;
-    return <CountryList countries={countries} />;
+    return <CountryList
+        countries={countries}
+        changePage={changePage}
+        page={page}
+    />;
 }
 
 export default CountriesPage;
