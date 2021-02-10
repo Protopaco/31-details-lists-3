@@ -15,6 +15,7 @@ const Header = () => {
                 </button>
                 </Link>
                 <button
+                    className={styles.themeButton}
                     onClick={switchTheme}>
                     {theme}
                 </button>

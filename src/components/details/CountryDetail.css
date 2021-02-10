@@ -1,16 +1,16 @@
 .figure{
     width: 800px;
     height: 700px;
-    border: 2px solid brown;
+    border: 2px solid var(--secondary);
     border-radius: 15px;
-    background-color: beige;
+    background-color: var(--primary);
 }
 
 .img{
     width: 750px;
     height: 500px;
     padding: 25px;
-    border-bottom: 4px solid brown;
+    border-bottom: 4px solid var(--secondary);
 }
 
 .caption{
@@ -25,13 +25,14 @@
 p{
     margin: 10px;
     font-size: 1.5em; 
-    color: brown;
+    color: var(--secondary);
     font-weight: bold;
 }
 
 .frame{
     width: 100vw;
-    height: 100vh - 200px;
+    height: 100vh;
     display:flex;
     justify-content: center;
+    background-color: var(--primary)
 }
