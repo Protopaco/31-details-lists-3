@@ -1,17 +1,19 @@
+@import '../../context/variables.css';
+
 .header{
-    background-color: brown;
+    background-color: var(--secondary);
     height: 150px;
     display: flex;
     flex-direction: column;
-    color: beige;
+    color: var(--primary);
     align-items: center;
     font-size: 3em;
-    margin-top: 0px;
+    margin: 0px;
 }
 
 .homeButton{
-    background-color: beige;
-    color: brown;
+    background-color: var(--primary);
+    color: var(--secondary);
     margin-left: 30px;
 }
 .backButton{
@@ -23,4 +25,9 @@
 
 .text{
     margin-bottom: 30px;
+}
+
+.themeButton{
+    color: var(--secondary);
+    background-color: var(--primary);
 }

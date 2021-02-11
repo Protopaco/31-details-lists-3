@@ -1,19 +1,23 @@
+@import '../../context/variables.css';
+
 .image{
     height: 125px;
 }
+
 .figure{
     padding: 25px 25px;
-    border: .5px solid brown;
+    border: .5px solid var(--secondary);
     border-radius: 15px;
-    background: beige;
+    background: var(--primary);
     width: 250px;
     height: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: brown;
+    color: var(--secondary);
     font-style: bold;
 }
+
 .caption{
     margin-top: 10px;
 }

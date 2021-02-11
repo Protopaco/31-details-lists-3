@@ -17,6 +17,11 @@ exports[`App component renders App 1`] = `
           HOME
         </button>
       </a>
+      <button
+        class="themeButton"
+      >
+        light
+      </button>
     </div>
     <div
       class="text"

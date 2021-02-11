@@ -2,22 +2,28 @@
 
 exports[`CountryList component renders CountryList 1`] = `
 <DocumentFragment>
-  <div>
+  <div
+    class="frame"
+  >
     <ul
-      class="controls"
+      class="list"
     >
       <li>
-        <button>
+        <button
+          class="button"
+        >
           &lt;
         </button>
       </li>
       <li
+        class="text"
         data-testid="pageNum"
       >
         f
       </li>
       <li>
         <button
+          class="button"
           data-testid="advancePage"
         >
           &gt;
