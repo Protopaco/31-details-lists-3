@@ -1,3 +1,5 @@
+@import '../../context/variables.css';
+
 .figure{
     width: 800px;
     height: 700px;
