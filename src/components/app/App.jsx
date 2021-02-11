@@ -13,7 +13,6 @@ import { ThemeProvider } from '../../context/theme-context'
 
 
 export default function App() {
-  const { changePage, page } = usePagination();
   return (
     <Router>
       <ThemeProvider>

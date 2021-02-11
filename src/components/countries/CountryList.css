@@ -1,5 +1,4 @@
-@import url('../../context/variables.css');
-
+@import '../../context/variables.css';
 
 .countryElements{
     display: flex;
@@ -38,6 +37,7 @@ div ul{
 }
 
 .frame {
-    background-color: var(--primary)
-
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
 }
